@@ -1,0 +1,266 @@
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+/* global */
+a{
+    color: aliceblue;
+    text-decoration: none;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+section{
+    margin: 3rem 4rem;
+}
+section.top-section{
+    margin: 3rem 4rem;
+    background-color: rgb(203, 59, 76);
+    color: aliceblue;
+    padding: 1rem 6rem
+
+}
+
+
+/* top side nav-bar */
+nav.top-side-bar{
+    display: flex;
+    justify-content: right;
+}
+nav.top-side-bar ul{
+    display:flex;
+    justify-content: space-between;
+   
+    list-style-type: none;
+    align-items: center;
+}
+nav.top-side-bar ul li a{
+    text-decoration: none;
+    padding-right: 0.7rem;
+    
+}
+nav.top-side-bar ul li span{
+    padding-right: 1rem;
+    height: 2rem;
+}
+nav.top-side-bar ul li a img{
+    height: 18px;
+    width: 18px;
+   
+}
+
+/* bottom nav-bar */
+nav.bottom-side-bar{
+    display: flex;
+    justify-content: right;
+    margin-top: 1rem;
+}
+nav.bottom-side-bar ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav.bottom-side-bar ul li{
+    list-style-type: none;
+    padding-right: 1rem;
+}
+nav.bottom-side-bar  a{
+    text-decoration: none;
+}
+nav.bottom-side-bar ul li button{
+    background-color: rgb(82, 197, 223);
+    border: none;
+    padding: 0.5rem;
+    border-radius: 4px;
+    color: aliceblue;
+    display: flex;
+    justify-content: first baseline;
+    font-size: 12px;
+}
+
+/* SECOND SECTION */
+section.second-nav-section ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0rem 12rem;
+    list-style-type: none;
+    margin-top: -48px;
+    margin-bottom: -40px;
+}
+section.second-nav-section ul li a{
+    color: rgb(145, 121, 121);
+    text-decoration: none;
+    font-size: 14px;
+}
+
+
+/* third section */
+:root{
+    --after-width:8rem;
+
+}
+
+
+section.third-section div.third-section-heading h1{
+    text-align: center;
+    position: relative;
+    letter-spacing: 0.2rem;
+    color:  rgb(82, 197, 223);
+    
+    
+    padding-top: -30px;
+}
+
+#h1-sudo::after{
+    content: "";
+    position: absolute;
+    width:var(--after-width);
+   border-bottom: 3px solid  rgb(82, 197, 223);
+    top: 35px;
+    left: 550px;
+}
+button.bottom-button{
+    background-color: rgb(57, 147, 167);
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    font-size: 12px;    
+    text-align: center;
+    margin: 0 auto;
+
+}
+.third-section-heading{
+    margin-bottom: 3rem;
+}
+
+div.button-div{
+    margin-top: 1rem;
+   margin-bottom: 2rem;
+}
+section.third-section{
+    margin: 1rem 4rem;
+
+}
+
+/* form section */
+div.container-form{
+    display: grid;
+    justify-content: center;
+    grid-gap: 1rem;
+}
+
+input.ps{
+    width: 14rem;
+    height: 2rem;
+    text-align: left;
+    margin-right: 1rem;
+    
+    
+  
+}
+
+input[type="text"]::placeholder{
+    margin-left: 10px;
+}
+
+.field {
+   
+    display: inline-block;
+    
+    
+    padding: 0.5rem;
+    border-radius: .25rem;
+  }
+input.ps-3{
+    width: 6rem;
+    margin-left: 1rem;
+}
+#Suffix{
+   margin-top: 1rem;
+   width: 14rem;
+   margin-right: 1rem
+}
+#address{
+    width: 29rem; 
+}
+#apt{
+    width: 6rem;
+    margin-left: 1rem;
+}
+h6{
+    margin-bottom: 0.5rem;
+}
+#pincode{
+    width: 6rem;
+    margin-left: 1rem;
+}
+
+.p-tag{
+    margin: 1rem auto;
+    width: 75%
+}
+
+
+/* media  */
+
+@media (max-width:1342px){
+    #h1-sudo::after{
+        display: none;
+    }
+}
+@media(max-width:959px){
+    section.second-nav-section ul {
+       
+        flex-wrap: wrap;
+        padding: 0 ;
+        padding-left: 12rem;
+        margin-right: 44px;
+    }
+}
+@media(max-width:840px){
+    section.top-section {
+        padding: 1rem 0rem;
+    }
+    section.second-nav-section ul{
+        margin-right: 44px;
+    }
+}
+
+@media(max-width:816){
+    nav.bottom-side-bar ul li button {
+        flex-wrap: nowrap;
+    }
+    section.top-section {
+        padding: 1rem 0rem;
+    }
+    div.container-form{
+        display: grid;
+    }
+    section.second-nav-section ul{
+        padding-left: 2rem;
+    }
+}
+@media(max-width:666px){
+    section.top-section {
+        margin: 0;
+        padding: 0;
+    }
+}
+@media(min-width:789){
+    section.second-nav-section ul{
+        padding-left: 3rem;
+    }
+    input.ps{
+        margin-bottom: 1rem;
+    }
+    
+}
+
+
